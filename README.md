@@ -1,2 +1,1 @@
-# Portfolio-V2
-rebuilding my personal portfolio with next.js
+re-building my portfolio with next.js
