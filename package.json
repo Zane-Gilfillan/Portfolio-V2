@@ -1,6 +1,9 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "engines": {
+      "node": "14.16.0"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -17,5 +20,17 @@
   "devDependencies": {
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1"
-  }
+  },
+  "description": "re-building my portfolio with next.js",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zane-Gilfillan/Portfolio-V2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zane-Gilfillan/Portfolio-V2/issues"
+  },
+  "homepage": "https://github.com/Zane-Gilfillan/Portfolio-V2#readme"
 }
