@@ -1,0 +1,21 @@
+.heading {
+    font-size: 5rem;
+}
+
+.container {
+
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black .3rem;
+    width: auto 0;
+    height: auto 0;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .5;
+
+        transition: 400ms ease-in-out;
+    }
+}
