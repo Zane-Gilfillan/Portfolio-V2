@@ -1,0 +1,30 @@
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 8rem 3rem 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+   .nav_links {
+       display: flex;
+       justify-content: space-around;
+       width: 50%;
+       
+       li {
+           padding: 1rem;
+           text-decoration: none;
+           list-style: none;
+           font-weight: 700;
+       }
+
+       a {
+           text-decoration: none;
+           transition: 300ms;
+
+           &:hover {
+            opacity: .5;
+            color: var(--clr-hover);
+        }
+       }  
+   }
+}

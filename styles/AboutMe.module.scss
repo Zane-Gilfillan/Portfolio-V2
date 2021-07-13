@@ -1,0 +1,87 @@
+
+$clr-background: rgb(246, 244, 247);
+$clr-hover: rgb(134, 84, 160);
+$clr-light: rgb(231, 208, 208);
+
+
+.about_me {
+
+    max-width: 1000px;
+    margin-left: 28rem;
+    margin-right: 28rem;
+    justify-content: center;
+    align-items: center;
+    
+    .profile_img {
+        position: relative;
+        bottom: 18rem;
+        
+        img {
+            width: 550px;
+        }
+    }
+    
+    .title {
+        
+        display: block;
+        position: relative;
+        bottom: 10rem;
+        font-size: 4rem;
+        line-height: .8;
+        padding: 2rem 0;
+        overflow: none;
+        z-index: 1;
+    }
+
+    .bio_info {
+        display: block;
+        position: relative;
+        bottom: 11.2rem;
+        font-size: 2rem;
+        line-height: .8;
+        padding: 2rem 0;
+        overflow: none;
+
+        //icon grid section
+        i {
+            padding: 1rem;
+            margin: 0;
+            width: 100%;
+            transition: 500ms ease-in;
+        }
+
+        i:hover {
+            opacity: .8;
+            color: $clr-hover;
+            cursor: pointer;
+        }
+
+        .bio_text {
+            font-size: 1rem;
+        }
+    }  
+} 
+
+.icon_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    height: auto;
+    width: auto;
+    position: relative;
+    bottom: 14.5rem;
+    
+}
+
+@keyframes opacity {
+    from {
+        opacity: .2;
+        transition: opacity 800ms ease-in-out;
+    }
+    to {
+        opacity: 1;
+        transition: opacity 1000ms ease-in-out;
+    }
+}
