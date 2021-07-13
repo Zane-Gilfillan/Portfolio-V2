@@ -18,10 +18,10 @@ const Footer = () => {
 
         <ul className={style.nav__ul}>
             <li>
-            <a href="#">digital design</a>
+            <a>digital design</a>
             </li>
             <li>
-            <a href="#">audio engineering</a>
+            <a>audio engineering</a>
             </li>
 
         </ul>
@@ -33,16 +33,16 @@ const Footer = () => {
         <ul className={style.nav__ul}>
         
             <li>
-            <a href="#">next js</a>
+            <a>next js</a>
             </li>
             <li>
-            <a href="#">sass</a>
+            <a>sass</a>
             </li>
             <li>
-            <a href="#">protools</a>
+            <a>protools</a>
             </li>
             <li>
-            <a href="#">maxmsp</a>
+            <a>maxmsp</a>
             </li>
         
         </ul>
@@ -53,11 +53,11 @@ const Footer = () => {
         
         <ul className="nav__ul">
             <li>
-            <a href="#">privacy policy</a>
+            <a>privacy policy</a>
             </li>
             
             <li>
-            <a href="#">terms of Use</a>
+            <a>terms of Use</a>
             </li>
             
         </ul>

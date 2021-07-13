@@ -27,15 +27,15 @@ const about_me = () => {
                     <div className={styles.bio_info}>
                         <p className={styles.bio_text}>i am a chicago based web developer and audio designer.</p>
                     </div>
-                    <div class={styles.icon_grid}>
-                        <i class="fab fa-html5 fa-3x"></i>
-                        <i class="fab fa-css3-alt fa-3x"></i>
-                        <i class="fab fa-sass fa-3x"></i>
-                        <i class="fab fa-bootstrap fa-3x"></i>
-                        <i class="fab fa-js fa-3x"></i>
-                        <i class="fab fa-node-js fa-3x"></i>
-                        <i class="fab fa-react fa-3x"></i>
-                        <i class="fab fa-next fa-3x"></i>
+                    <div className={styles.icon_grid}>
+                        <i className="fab fa-html5 fa-3x"></i>
+                        <i className="fab fa-css3-alt fa-3x"></i>
+                        <i className="fab fa-sass fa-3x"></i>
+                        <i className="fab fa-bootstrap fa-3x"></i>
+                        <i className="fab fa-js fa-3x"></i>
+                        <i className="fab fa-node-js fa-3x"></i>
+                        <i className="fab fa-react fa-3x"></i>
+                        <i className="fab fa-next fa-3x"></i>
                     </div>
                 </div>
             </div>

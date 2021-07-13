@@ -17,11 +17,11 @@ const design = () => {
             </div>
 
             <div className={styles.container}>
-                <Link href='https://mysterious-meadow-15624.herokuapp.com/'><Image src={study} /></Link>
+                <Link href='https://mysterious-meadow-15624.herokuapp.com/' target='_blank'><Image src={study} /></Link>
             </div>
 
             <div className={styles.container}>
-                <Link href='https://zane-gilfillan.github.io/Bathroom-Finder/index.html'><Image src={safe} /></Link>
+                <Link href='https://zane-gilfillan.github.io/Bathroom-Finder/index.html' target='_blank'><Image src={safe} /></Link>
             </div>
 
             <div className={styles.container}>
