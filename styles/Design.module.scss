@@ -5,20 +5,109 @@
     top: 3rem;
 }
 
-.container {
+.card {
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     margin: 1rem;
     padding: 1rem;
-    border: solid rgba(38, 23, 46, 0.788) .3rem;
+    border: solid rgba(76, 55, 87, 0.726) .3rem;
+    border-radius: .2rem;
     width: auto 0;
     height: auto 0;
 
-    &:hover {
-        cursor: pointer;
-        opacity: .5;
 
-        transition: 400ms ease-in-out;
+    .image_holder {
+        
+        &:hover {
+            cursor: pointer;
+            opacity: .5;
+    
+            transition: 400ms ease-in-out;
+        }
+    }
+
+    .image_descrip {
+
+        h1 {
+
+            font-size: 3rem;
+            position: relative;
+            bottom: 3rem;
+        }
+
+        .icon_holder {
+
+            display: flex;
+            gap: 2rem;
+            position: relative;
+            bottom: 3rem;
+        }
+
+        .app_descrip {
+
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .card {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        border: solid rgba(76, 55, 87, 0.726) .3rem;
+        border-radius: .2rem;
+        width: auto 0;
+        height: auto 0;
+    
+    
+        .image_holder {
+            
+            &:hover {
+                cursor: pointer;
+                opacity: .5;
+        
+                transition: 400ms ease-in-out;
+            }
+        }
+    
+        .image_descrip {
+    
+            h1 {
+    
+                font-size: 3rem;
+                position: relative;
+                bottom: 3rem;
+            }
+    
+            .icon_holder {
+    
+                display: flex;
+                gap: 2rem;
+                position: relative;
+                bottom: 3rem;
+            }
+    
+            .app_descrip {
+    
+                font-size: 1.1rem;
+                
+                .list_item {
+                        margin-bottom: 1rem;
+                        
+                    }
+                
+            }
+        }
     }
 }
