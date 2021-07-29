@@ -19,6 +19,6 @@ also am wanting to set up a dark mode as well. design ideas can be seen below:
 
 ## Live Site
 
-this portfolio can be found at: https://calm-journey-70423.herokuapp.com/
+this portfolio can be found at: thisisaportfolio.herokuapp.com/
 
 
