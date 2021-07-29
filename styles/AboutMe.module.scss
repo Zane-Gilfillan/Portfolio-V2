@@ -5,83 +5,82 @@ $clr-light: rgb(231, 208, 208);
 
 
 .about_me {
-
-    max-width: 1000px;
-    margin-left: 28rem;
-    margin-right: 28rem;
-    justify-content: center;
-    align-items: center;
-    
-    .profile_img {
-        position: relative;
-        bottom: 18rem;
-        
-        img {
-            width: 550px;
-        }
-    }
-    
-    .title {
-        
-        display: block;
-        position: relative;
-        bottom: 10rem;
-        font-size: 4rem;
-        line-height: .8;
-        padding: 2rem 0;
-        overflow: none;
-        z-index: 1;
-    }
-
-    .bio_info {
-        display: block;
-        position: relative;
-        bottom: 11.2rem;
-        font-size: 2rem;
-        line-height: .8;
-        padding: 2rem 0;
-        overflow: none;
-
-        //icon grid section
-        i {
-            padding: 1rem;
-            margin: 0;
-            width: 100%;
-            transition: 500ms ease-in;
-        }
-
-        i:hover {
-            opacity: .8;
-            color: $clr-hover;
-            cursor: pointer;
-        }
-
-        .bio_text {
-            font-size: 1rem;
-        }
-    }  
-} 
-
-.icon_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
     justify-content: center;
-    align-items: start;
-    text-align: left;
-    height: auto;
-    width: auto;
-    position: relative;
-    bottom: 14.5rem;
-    
+    margin: 5rem auto;
+    width: 50rem;
+
+    .showcase{
+        
+        .title {
+
+            text-align: left;
+            position: relative;
+            
+
+            h1 {
+                font-size: 6.5rem;
+                line-height: .8;
+            }
+        }
+
+        .profile_img {
+            position: relative;
+            bottom: 2.5rem;
+            
+            img {
+                border-radius: .3rem;
+            }
+        }
+    }
 }
 
-@keyframes opacity {
-    from {
-        opacity: .2;
-        transition: opacity 800ms ease-in-out;
+.bio_info {
+
+    position: relative;
+    top: 4rem;
+
+    .bio_info {
+        p {
+            font-size: 2rem;
+            text-align: center;
+        }
     }
-    to {
-        opacity: 1;
-        transition: opacity 1000ms ease-in-out;
+
+    .icon_grid {
+
+        position: relative;
+        top: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        
+        i {
+            padding: 2rem;
+
+            &:hover {
+                opacity: .3;
+                color: $clr-hover;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+            }
+
+            img {
+
+                &:hover {
+                    opacity: .3;
+                    color: $clr-hover;
+                    cursor: pointer;
+                    transition: 300ms ease-in-out;
+                }
+            }
+        }
+
+        
     }
 }
