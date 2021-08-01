@@ -13,7 +13,7 @@
     
     .main {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
         width: 50rem;
@@ -42,25 +42,32 @@
             }
         }
 
-        .sub_btn {
-            position: relative;
-            top: 5rem;
-            width: 15rem;
-            height: 2.5rem;
-            margin-bottom: 5rem;
-            background-color: white;
-            border-radius: .2rem;
-            font-size: 1.5rem;
-            transition: 200ms ease-in-out;
+        .message_area {
 
-            &:hover {
-                cursor: pointer;
-                box-shadow: 13px 18px 0px 5px #000000;
+            font-size: 2rem;
+            
+            input {
+                
+                height: 20rem;
+                width: 30rem;
+            }
+
+            .sub_btn {
+                position: relative;
+                top: 5rem;
+                width: 15rem;
+                height: 2.5rem;
+                margin-bottom: 5rem;
+                background-color: white;
+                border-radius: .2rem;
+                font-size: 1.5rem;
+                transition: 200ms ease-in-out;
+    
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 13px 5px 0px 5px #000000;
+                }
             }
         }
-
-        
-        
     }
-    
 }
