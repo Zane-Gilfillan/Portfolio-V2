@@ -4,11 +4,26 @@ import Footer from '../components/Footer'
 import styles from '../styles/Contact.module.scss'
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
+import Image from 'next/image'
+import block from '../public/img/show2.jpg'
+import git from '../public/img/github.svg'
+import link from '../public/img/linkedin.svg'
+import pdf from '../public/img/pdf-icon.svg'
+import FileSaver from 'file-saver';
 
 const QuillNoSSRWrapper = dynamic(import('react-quill'), {	
 	ssr: false,
 	
 })
+
+const resumeDownload = () => {
+        
+    FileSaver.saveAs(
+        process.env.REACT_APP_CLIENT_URL + '/..public/resource/resume.pdf',
+        'resume.pdf'
+    )
+}
+
 
 QuillNoSSRWrapper.displayName = 'QuillNoSSRWrapper'
 
@@ -67,14 +82,24 @@ const contact = () => {
 
                     < formGroup className={styles.inputGroup} >
                         < label htmlFor='email'>email:</label>
-                        < input type='email' onChange={(e)=>{setName(e.target.value)}} name='email'  />
+                        < input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email'  />
                     </formGroup>
 
                     < formGroup className={styles.message_area} >
                         < label htmlFor='message'>message</label>
-                        < textarea type='text' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.text_input} />
+                        < textarea type='text' placeholder='hello' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.text_input} />
                         < input type='submit' value='submit' className={styles.sub_btn} onClick={(e)=>{handleSubmit(e)}}/>
+
+                        <div className={styles.mini_grid}>
+                            <a href='https://github.com/Zane-Gilfillan' target='_blank'><Image src={git} height='100' width='100' /></a>
+                            <a href='https://www.linkedin.com/in/zane-gilfillan-0018bb20a/' target='_blank'><Image src={link} height='100' width='100' /></a>
+                            <a><Image onClick={resumeDownload}  src={pdf} height='100' width='100' /></a>
+                        </div>
                     </formGroup>
+
+                    <div className={styles.img_wrap}>
+                        <Image src={block} />
+                    </div>
 
 
                     {/* this i will replace the text area for a WYSIWYG editor in the future */}

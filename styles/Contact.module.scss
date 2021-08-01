@@ -14,6 +14,7 @@
     .main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem   ;
         align-items: center;
         justify-content: center;
         width: 50rem;
@@ -21,10 +22,10 @@
 
         .inputGroup {
 
-            font-size: 2rem;
+            font-size: 1.7rem;
             
             input {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 border-top: none;
                 border-left: none;
                 border-right: none;
@@ -44,30 +45,78 @@
 
         .message_area {
 
-            font-size: 2rem;
+            font-size: 1.7rem;
+            position: relative;
+            bottom: 6rem;
             
-            input {
-                
-                height: 20rem;
-                width: 30rem;
+            textarea {
+                margin-top: 1rem;
+                height: 15rem;
+                width: 25rem;
+                border: solid black .125rem;
+                border-radius: .3rem;
+
+                &:focus {
+                    outline: none;
+                }
             }
 
             .sub_btn {
                 position: relative;
-                top: 5rem;
+                top: 1rem;
+                left: 5rem;
+                
                 width: 15rem;
                 height: 2.5rem;
                 margin-bottom: 5rem;
                 background-color: white;
                 border-radius: .2rem;
+                border: black solid .125rem;
                 font-size: 1.5rem;
                 transition: 200ms ease-in-out;
     
                 &:hover {
                     cursor: pointer;
-                    box-shadow: 13px 5px 0px 5px #000000;
+                    box-shadow: 8px 5px 0px 3px #000000;
+                }
+            }
+
+            .mini_grid {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+
+                img {
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
+
+        .img_wrap {
+
+            position: relative;
+            top: 1.6rem;
+            
+
+            img {
+                border-radius: .7rem;
+                width: 25rem;
+
+                animation: zoom 45s;
+            }
+        }
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.5, 1.5);
     }
 }
