@@ -28,7 +28,7 @@ const design = () => {
             {/* card one */}
             <div className={styles.card}>
                 <div className={styles.image_holder}>
-                    <Link href='https://zanelandia.herokuapp.com/'><a target='_blank'><Image src={turns} /></a></Link>
+                    <Link href='https://zanelandia.herokuapp.com/'><a target='_blank'><Image src={turns} alt='app image' /></a></Link>
                 </div>
 
                 <div className={styles.image_descrip}>
@@ -37,12 +37,12 @@ const design = () => {
                         <i className="fab fa-sass fa-3x"></i>
                         <i className="fab fa-react fa-3x"></i>
                         <i className="fab fa-node-js fa-3x"></i>
-                        <i><Image src={next} height='50' width='50' /></i>
+                        <i><Image src={next} alt='icon image' height='50' width='50' /></i>
                     </div>
                     <div className={styles.app_descrip}>
                         
                         <p className={styles.list_item}>turn one is a search engine and game companion for Magic: The Gathering</p>
-                        <p>using scryfall's powerfull api to return cards as well as displaying an auto-complete function pulling upto 20 cards</p>
+                        <p>using scryfall&#39;s powerfull api to return cards as well as displaying an auto-complete function pulling upto 20 cards</p>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const design = () => {
             {/* card two */}
             <div className={styles.card}>
                 <div className={styles.image_holder}>
-                    <Link href='https://mysterious-meadow-15624.herokuapp.com/'><a target='_blank'><Image src={study} /></a></Link>
+                    <Link href='https://mysterious-meadow-15624.herokuapp.com/'><a target='_blank'><Image src={study} alt='app image' /></a></Link>
                 </div>
 
                 <div className={styles.image_descrip}>
@@ -73,7 +73,7 @@ const design = () => {
             {/* card three */}
             <div className={styles.card}>
                 <div className={styles.image_holder}>
-                    <Link href='https://mysterious-meadow-15624.herokuapp.com/'><a target='_blank'><Image src={safe} /></a></Link>
+                    <Link href='https://mysterious-meadow-15624.herokuapp.com/'><a target='_blank'><Image src={safe} alt='app image' /></a></Link>
                 </div>
 
                 <div className={styles.image_descrip}>

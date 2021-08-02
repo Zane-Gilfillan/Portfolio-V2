@@ -13,7 +13,7 @@ const Showcase = () => {
                         <h1>minimal website designs.</h1>
                     </div>
                     <div className={styles.img_holder}>
-                        <Image src={block} />
+                        <Image src={block} alt='monolith' />
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ const about_me = () => {
                         <h1 className={styles.tite_text}>zane gilfillan.</h1>
                     </div>
                     <div className={styles.profile_img}>
-                        <Image src={proPic} height='500' width='400'  />
+                        <Image src={proPic} alt='a picture of me' height='500' width='400'  />
                     </div>
                 </div>
                 
@@ -36,7 +36,7 @@ const about_me = () => {
                         <i className="fab fa-node-js fa-5x"></i>
                         <i className="fab fa-react fa-5x"></i>
                         <i className="fab fa-next fa-5x"></i>
-                        <i><Image src={next} /></i>
+                        <i><Image src={next} alt='icon image' /></i>
                     </div>
                 </div>
             </div>

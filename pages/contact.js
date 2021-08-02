@@ -36,9 +36,6 @@ const contact = () => {
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
     const [buttonText, setButtonText] = useState('submit')
-    const [areaText, setAreaText] = useState('hey, nice to meet you...')
-
-
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -92,19 +89,19 @@ const contact = () => {
 
                     < formGroup className={styles.message_area} >
                         < label htmlFor='message'>message</label>
-                        < textarea type='text' placeholder={areaText} onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.text_input} />
+                        < textarea type='text' placeholder='hey, nice to meet you!' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.text_input} />
                         < button type='submit' className={styles.sub_btn} onClick={(e)=>{handleSubmit(e)}}>{buttonText}</button>
 
                         <div className={styles.mini_grid}>
-                            <a href='https://github.com/Zane-Gilfillan' target='_blank'><Image src={git} height='100' width='100' /></a>
-                            <Image onClick={resumeDownload} src={pdf} height='200' width='120' />
-                            <a href='https://www.linkedin.com/in/zane-gilfillan-0018bb20a/' target='_blank'><Image src={linked} height='100' width='100' /></a>
+                            <a href='https://github.com/Zane-Gilfillan' target='_blank'><Image src={git} alt='icon image' height='100' width='100' /></a>
+                            <Image onClick={resumeDownload} src={pdf} alt='icon image' height='200' width='120' />
+                            <a href='https://www.linkedin.com/in/zane-gilfillan-0018bb20a/' target='_blank'><Image src={linked} alt='icon image' height='100' width='100' /></a>
                             
                         </div>
                     </formGroup>
 
                     <div className={styles.img_wrap}>
-                        <Image src={block} />
+                        <Image src={block} alt='monolith' />
                     </div>
 
 
