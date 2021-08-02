@@ -1,8 +1,6 @@
-import 'react-quill/dist/quill.snow.css'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import styles from '../styles/Contact.module.scss'
-import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import Image from 'next/image'
 import block from '../public/img/show2.jpg'
@@ -10,12 +8,6 @@ import git from '../public/img/github.svg'
 import linked from '../public/img/linkedin.svg'
 import pdf from '../public/img/pdf-icon.svg'
 import FileSaver from 'file-saver';
-import Link from 'next/link'
-
-const QuillNoSSRWrapper = dynamic(import('react-quill'), {	
-	ssr: false,
-	
-})
 
 const resumeDownload = () => {
         
@@ -24,9 +16,6 @@ const resumeDownload = () => {
         'resume.pdf'
     )
 }
-
-
-QuillNoSSRWrapper.displayName = 'QuillNoSSRWrapper'
 
 const contact = () => {
 
@@ -103,13 +92,6 @@ const contact = () => {
                     <div className={styles.img_wrap}>
                         <Image src={block} alt='monolith' />
                     </div>
-
-
-                    {/* this i will replace the text area for a WYSIWYG editor in the future */}
-                    {/* < formGroup className={styles.inputGroup} >
-                        < label htmlFor='message'></label>
-                        <QuillNoSSRWrapper type='text' name='message' className={styles.quill}  theme="snow" />
-                    </formGroup> */}
                 </form >
             </div>
             
