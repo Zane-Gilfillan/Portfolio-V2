@@ -42,7 +42,7 @@ const design = () => {
                     <div className={styles.app_descrip}>
                         
                         <p className={styles.list_item}>turn one is a search engine and game companion for Magic: The Gathering</p>
-                        <p>using scryfall&#39;s powerfull api to return cards as well as displaying an auto-complete function pulling upto 20 cards</p>
+                        <p>using scryfall&#39;s powerfull api to return cards as well as displaying an auto-complete function pulling up to 20 cards</p>
                     </div>
                 </div>
             </div>
