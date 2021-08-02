@@ -87,7 +87,7 @@ const design = () => {
                         
                         <p className={styles.list_item}>safe room displays restrooms that are safe and accessible for LGBTQ+ peoples in our community</p>
                         <p>ability to save restrooms that you have used in the past</p>
-                        <p>utiling google maps api</p>
+                        <p>utilizing google maps api</p>
             
                     </div>
                 </div>

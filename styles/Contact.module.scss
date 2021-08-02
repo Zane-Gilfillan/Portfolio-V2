@@ -25,7 +25,7 @@
             font-size: 1.7rem;
             
             input {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 border-top: none;
                 border-left: none;
                 border-right: none;
@@ -47,7 +47,7 @@
 
             font-size: 1.7rem;
             position: relative;
-            bottom: 6rem;
+            bottom: 2.7rem;
             
             textarea {
                 margin-top: 1rem;
@@ -83,14 +83,18 @@
 
             .mini_grid {
                 display: flex;
-                gap: 1rem;
+                gap: 2rem;
                 align-items: center;
                 justify-content: center;
 
                 img {
 
+                    position: relative;
+
                     &:hover {
                         cursor: pointer;
+                        transform: translateY(-.08rem);
+                        transition: ease-in-out 200ms;
                     }
                 }
             }
