@@ -17,7 +17,7 @@ const resumeDownload = () => {
     )
 }
 
-const contact = () => {
+export default function Contact() {
 
 
     const [name, setName] = useState('')
@@ -100,5 +100,3 @@ const contact = () => {
         </div>
     )
 }
-
-export default contact
