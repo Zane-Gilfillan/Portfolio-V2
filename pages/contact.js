@@ -93,9 +93,9 @@ const contact = () => {
                         < button type='submit' className={styles.sub_btn} onClick={(e)=>{handleSubmit(e)}}>{buttonText}</button>
 
                         <div className={styles.mini_grid}>
-                            <a href='https://github.com/Zane-Gilfillan' target='_blank'><Image src={git} alt='icon image' height='100' width='100' /></a>
+                            <a href='https://github.com/Zane-Gilfillan' target='_blank' rel='noreferrer'><Image src={git} alt='icon image' height='100' width='100' /></a>
                             <Image onClick={resumeDownload} src={pdf} alt='icon image' height='200' width='120' />
-                            <a href='https://www.linkedin.com/in/zane-gilfillan-0018bb20a/' target='_blank'><Image src={linked} alt='icon image' height='100' width='100' /></a>
+                            <a href='https://www.linkedin.com/in/zane-gilfillan-0018bb20a/' target='_blank' rel='noreferrer'><Image src={linked} alt='icon image' height='100' width='100' /></a>
                             
                         </div>
                     </formGroup>
