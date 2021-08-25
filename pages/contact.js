@@ -12,7 +12,7 @@ import FileSaver from 'file-saver';
 const resumeDownload = () => {
         
     FileSaver.saveAs(
-        process.env.PUBLIC_URL + '/resource/resume.pdf',
+        process.env.PUBLIC_URL + '../resource/resume.pdf',
         'resume.pdf'
     )
 }
