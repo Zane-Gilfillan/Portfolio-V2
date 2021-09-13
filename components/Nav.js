@@ -10,7 +10,7 @@ const Nav = () => {
                     <ul className={styles.nav_links}>
                         <li><Link href="/">home.</Link></li>
                         <li><Link href="/about_me">about.</Link></li>
-                        <li><a href="http://www.heavyveils.com/" target="_blank">audio.</a></li>
+                        <li><a href="http://www.heavyveils.com/" target="_blank" rel="noreferrer">audio.</a></li>
                         <li><Link href="/design">designs.</Link></li>
                         <li><Link href="/contact">contact.</Link></li>
                     </ul>
